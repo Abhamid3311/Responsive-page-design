@@ -41,7 +41,6 @@ $bg-color: #F6FAFD;
 }
 
 .text-area-container {
-    width: 100 vw;
     height: 388px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 10px #0000001A;
@@ -54,13 +53,16 @@ $bg-color: #F6FAFD;
     background: $primaryColor 0% 0% no-repeat padding-box;
     font-size: 18px;
     margin-right: 10px;
+    border: 1px solid $primaryColor;
 }
 
-.filter-btn {
+#filter-btn {
     width: 125px;
     height: 47px;
     background: $primaryColor 0% 0% no-repeat padding-box;
     font-size: 18px;
+    display: block;
+
 }
 
 .write-btn {
@@ -74,13 +76,20 @@ $bg-color: #F6FAFD;
     height: 76px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 10px #0000001A;
-    padding: 5px;
-    margin: 10px 5px;
+    padding: 10px;
+    margin: 15px 5px;
     overflow: hidden;
 }
 
 .copy {
     border-right: 1px solid #41475699;
     color: $primaryColor;
-    
+}
+
+
+@media only screen and (max-width: 600px) {
+    #filter-btn {
+        display: none;
+        color: red;
+    }
 }

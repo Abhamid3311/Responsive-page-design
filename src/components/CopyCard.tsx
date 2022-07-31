@@ -11,7 +11,7 @@ const CopyCard = () => {
     }, []);
 
     return (
-        <div>
+        <div className='mt-5'>
             <Container fluid>
                 <Button className='write-btn'>Write for me</Button>
                 <p className='text-end'>

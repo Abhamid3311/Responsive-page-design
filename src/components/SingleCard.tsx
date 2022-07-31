@@ -7,9 +7,9 @@ const SingleCard = ({ text }: any) => {
         <div>
             <Container fluid className='single-Card-text'>
                 <Row >
-                    <Col className='copy text-center' lg="3">Copy</Col>
+                    <Col className='copy text-center' lg="2">Copy</Col>
 
-                    <Col lg="9">
+                    <Col lg="10">
                         {text.textC}
                     </Col>
                 </Row>

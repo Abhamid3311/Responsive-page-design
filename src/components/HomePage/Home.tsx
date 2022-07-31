@@ -12,7 +12,7 @@ const Home = () => {
             <Container fluid>
                 <Row className="align-items-center ">
                     <Col className='pt-4'>
-                        <Breadcrumb className='fs-4 '>
+                        <Breadcrumb className='fs-5 '>
                             <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                             <Breadcrumb.Item active href="#">
                                 Writing Assistant
@@ -20,9 +20,12 @@ const Home = () => {
                         </Breadcrumb>
                     </Col>
 
-                    <Col className='text-end'>
-                        <Button className='save-btn'>save</Button>
-                        <Button className='filter-btn'>Filter</Button>
+                    <Col>
+                        <span className='d-flex justify-content-end'>
+                            <Button className='save-btn'>save</Button>
+                            <Button id='filter-btn'>Filter</Button>
+                        </span>
+
                     </Col>
                 </Row>
             </Container>
