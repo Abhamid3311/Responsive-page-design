@@ -11,6 +11,10 @@ $bg-color: #F6FAFD;
     color: $primaryColor;
 }
 
+.bg-clr {
+    background-color: $bg-color;
+}
+
 .yamak {
     font-size: 30px;
     font-weight: 800;
@@ -28,7 +32,6 @@ $bg-color: #F6FAFD;
     border: 1px solid $primaryColor;
 }
 
-
 #prompt,
 #creativity {
     width: 100px;
@@ -45,6 +48,36 @@ $bg-color: #F6FAFD;
     opacity: 1;
 }
 
-.bg-clr {
-    background-color: $bg-color;
+.save-btn {
+    width: 158px;
+    height: 47px;
+    background: $primaryColor 0% 0% no-repeat padding-box;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.filter-btn {
+    width: 125px;
+    height: 47px;
+    background: $primaryColor 0% 0% no-repeat padding-box;
+    font-size: 18px;
+}
+
+.write-btn {
+    width: 409px;
+    height: 42px;
+    background: transparent linear-gradient(180deg, #0188F3 0%, #0073CF 100%) 0% 0% no-repeat padding-box;
+}
+
+.single-Card-text {
+    width: 504px;
+    height: 76px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #0000001A;
+    padding: 5px;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+.copy{
+    
 }

@@ -1,19 +1,35 @@
-import React from 'react';
-import { Breadcrumb, Col, Container, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Breadcrumb, Button, Col, Container, Row } from 'react-bootstrap';
+import CopyCard from '../CopyCard';
 import TextArea from './TextArea';
 
 
 const Home = () => {
+    const [count, setCount] = useState<number>(0);
+
     return (
         <div className='home-container'>
             <Container fluid>
-                <Breadcrumb className='fs-4 pt-4'>
-                    <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-                    <Breadcrumb.Item active href="#">
-                        Writing Assistant
-                    </Breadcrumb.Item>
-                </Breadcrumb>
+                <Row className="align-items-center ">
+                    <Col className='pt-4'>
+                        <Breadcrumb className='fs-4 '>
+                            <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                            <Breadcrumb.Item active href="#">
+                                Writing Assistant
+                            </Breadcrumb.Item>
+                        </Breadcrumb>
+                    </Col>
 
+                    <Col className='text-end'>
+                        <Button className='save-btn'>save</Button>
+                        <Button className='filter-btn'>Filter</Button>
+                    </Col>
+                </Row>
+            </Container>
+
+
+
+            <Container fluid>
                 <p className='pt-4 '>Enter input to get <span className='primary-color'>Writing Assistant</span></p>
 
                 <Row>
@@ -43,12 +59,17 @@ const Home = () => {
                         </div>
                     </Col>
                 </Row>
-
+                <div className='text-end'>
+                    <p className='fs-5 mb-0'>
+                        <span>word: 00</span> | <span>charectar: 0/250</span>
+                    </p>
+                </div>
                 <div>
                     <TextArea />
                 </div>
-
             </Container>
+
+            <CopyCard />
 
 
         </div>
