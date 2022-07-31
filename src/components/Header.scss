@@ -34,7 +34,7 @@ $bg-color: #F6FAFD;
 
 #prompt,
 #creativity {
-    width: 100px;
+    width: 80px;
     height: 44px;
     margin-left: 10px;
     border: 1px solid $primaryColor;
@@ -64,7 +64,7 @@ $bg-color: #F6FAFD;
 }
 
 .write-btn {
-    width: 409px;
+    width: 405px;
     height: 42px;
     background: transparent linear-gradient(180deg, #0188F3 0%, #0073CF 100%) 0% 0% no-repeat padding-box;
 }
@@ -78,6 +78,9 @@ $bg-color: #F6FAFD;
     margin: 10px 5px;
     overflow: hidden;
 }
-.copy{
+
+.copy {
+    border-right: 1px solid #41475699;
+    color: $primaryColor;
     
 }

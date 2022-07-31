@@ -30,46 +30,56 @@ const Home = () => {
 
 
             <Container fluid>
-                <p className='pt-4 '>Enter input to get <span className='primary-color'>Writing Assistant</span></p>
+                <Row className="align-items-center">
+                    <Col xs lg="7">
+                        <Container fluid>
+                            <p className='pt-4 '>Enter input to get <span className='primary-color'>Writing Assistant</span></p>
 
-                <Row>
-                    <Col>
-                        <p className='count'>Words Count: <input type="number" /></p>
+                            <Row>
+                                <Col>
+                                    <p className='count'>Words Count: <input type="number" /></p>
+                                </Col>
+                                <Col>
+                                    <div>
+                                        <label htmlFor="prompt">Prompt:</label>
+                                        <select name="prompt" id="prompt">
+                                            <option disabled selected value="one">select</option>
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                        </select>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div>
+                                        <label htmlFor="creativity">Creativity:</label>
+                                        <select name="creativity" id="creativity">
+                                            <option disabled selected value="one">select</option>
+                                            <option value="writing">writing</option>
+                                            <option value="reading">Reading</option>
+                                            <option value="painting">Painting</option>
+                                        </select>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <div className='text-end'>
+                                <p className='fs-5 mb-0'>
+                                    <span>word: 00</span> | <span>charectar: 0/250</span>
+                                </p>
+                            </div>
+                            <div>
+                                <TextArea />
+                            </div>
+                        </Container>
                     </Col>
-                    <Col>
-                        <div>
-                            <label htmlFor="prompt">Prompt:</label>
-                            <select name="prompt" id="prompt">
-                                <option disabled selected value="one">select</option>
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                            </select>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div>
-                            <label htmlFor="creativity">Creativity:</label>
-                            <select name="creativity" id="creativity">
-                                <option disabled selected value="one">select</option>
-                                <option value="writing">writing</option>
-                                <option value="reading">Reading</option>
-                                <option value="painting">Painting</option>
-                            </select>
-                        </div>
+
+                    <Col xs lg="5">
+                        <CopyCard />
                     </Col>
                 </Row>
-                <div className='text-end'>
-                    <p className='fs-5 mb-0'>
-                        <span>word: 00</span> | <span>charectar: 0/250</span>
-                    </p>
-                </div>
-                <div>
-                    <TextArea />
-                </div>
             </Container>
 
-            <CopyCard />
+
 
 
         </div>

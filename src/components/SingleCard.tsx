@@ -6,10 +6,10 @@ const SingleCard = ({ text }: any) => {
     return (
         <div>
             <Container fluid className='single-Card-text'>
-                <Row>
-                    <Col className='copy'>Copy</Col>
+                <Row >
+                    <Col className='copy text-center' lg="3">Copy</Col>
 
-                    <Col>
+                    <Col lg="9">
                         {text.textC}
                     </Col>
                 </Row>
